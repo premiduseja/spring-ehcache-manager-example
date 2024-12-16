@@ -8,7 +8,7 @@ Example code of using ehcache manager with spring boot 3
   
 * Step 2. Run the following is the DDL for the creation t_employee tabe:
   
-  ```SQL CREATE TABLE `t_employee` (
+  ``` CREATE TABLE `t_employee` (
   `id` int NOT NULL AUTO_INCREMENT,
   `first_name` varchar(100) DEFAULT NULL,
   `last_name` varchar(100) DEFAULT NULL,
