@@ -2,7 +2,7 @@
 Example code of using ehcache manager with spring boot 3
 
 ## Local Setup steps:
-* Step 1. Set environt variables
+* Step 1. Set environment variables
   
   ``` DB_PASSWORD=<replace with database password>; DB_USER_NAME=<replace with database user name>```
   
