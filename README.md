@@ -6,9 +6,13 @@ Example code of using ehcache manager with spring boot 3
   
   ``` DB_PASSWORD=<replace with database password>; DB_USER_NAME=<replace with database user name>```
   
-* Step 2. Run the following is the DDL for the creation t_employee tabe:
+* Step 2. Create database named learn in your local mysql instance.
   
-  ``` CREATE TABLE `t_employee` (
+  ``` CREATE DATABASE learn; ```
+
+* Step 3. Run the following is the DDL for the creation t_employee table:
+  
+  ``` CREATE TABLE learn.`t_employee` (
   `id` int NOT NULL AUTO_INCREMENT,
   `first_name` varchar(100) DEFAULT NULL,
   `last_name` varchar(100) DEFAULT NULL,
