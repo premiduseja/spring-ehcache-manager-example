@@ -21,7 +21,7 @@ public class EmployeeController {
     @Autowired
     EmployeeService employeeService;
 
-    @GetMapping("/employeeId/{id}")
+    @GetMapping("/{id}")
     public HttpEntity<Employee> getEmployeeByFirstName(@PathVariable("id") Long employeeId){
         Optional <Employee> optionalEmployee = employeeService.getEmployeeById(employeeId);
         return optionalEmployee.map(employee -> new ResponseEntity<>(employee, HttpStatus.OK)).orElseGet(() -> new ResponseEntity<>(null, HttpStatus.NOT_FOUND));
